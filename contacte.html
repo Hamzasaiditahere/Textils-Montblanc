@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <title>Contacte - Tèxtils Montblanc</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-container {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .contact-form, .contact-image {
+            flex: 1 1 45%;
+        }
+
+        .contact-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,14 +41,20 @@
     <p>📍 Carrer Exemplar, 123 - Montblanc</p>
     <p>📞 Telèfon: 977 123 456</p>
     <p>✉️ Email: info@textilsmontblanc.com</p>
-    
-    <form action="#" method="post">
-        <label>Nom:<br><input type="text" name="nom" required></label><br><br>
-        <label>Email:<br><input type="email" name="email" required></label><br><br>
-        <label>Missatge:<br><textarea name="missatge" rows="5" required></textarea></label><br><br>
-        <button type="submit" class="button">Enviar</button>
-    </form>
-    <img src="img/contacte.jpg" alt="Oficines Montblanc" class="full-width">
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label>Nom:<br><input type="text" name="nom" required></label><br><br>
+                <label>Email:<br><input type="email" name="email" required></label><br><br>
+                <label>Missatge:<br><textarea name="missatge" rows="5" required></textarea></label><br><br>
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </div>
+        <div class="contact-image">
+            <img src="img/contacte.jpg" alt="Oficines Montblanc">
+        </div>
+    </div>
 </main>
 
 <footer>
